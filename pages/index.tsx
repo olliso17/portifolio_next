@@ -8,17 +8,30 @@ import css4 from '../components/body/Body.module.css';
 import { Title } from '../components/title/title';
 import { ImagePhoto } from '../components/image/image';
 import { Body } from '../components/body/body';
+import Head from 'next/head';
+
 
 const Home: NextPage = () => {
   return (
     <>
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+          <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Special+Elite&display=swap" rel="stylesheet"/>
+
+        </Head>
         <Header classStyle={css1.header} child={
           <>
               <Title classStyle={css2.title} text="Bem Vindos ao meu Portifólio"></Title>
-              <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
           </>
         }></Header>
-        <Body classStyle={css4.body}></Body>
+        <Body classStyle={css4.body} child={
+          <>
+              <Title classStyle={css2.title} text="Me chamo Patrícia Silva Oliveira, sou web  developer"></Title>
+              <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
+          
+          </>
+        }></Body>
     </>
 
   )
