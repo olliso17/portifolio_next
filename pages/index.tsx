@@ -5,10 +5,12 @@ import css1 from '../components/header/Header.module.css';
 import css2 from '../components/title/Title.module.css';
 import css3 from '../components/image/Image.module.css';
 import css4 from '../components/body/Body.module.css';
+import css5 from '../components/skill/Skill.module.css';
 import { Title } from '../components/title/title';
 import { ImagePhoto } from '../components/image/image';
 import { Body } from '../components/body/body';
 import Head from 'next/head';
+import { Skill } from '../components/skill/skill';
 
 
 const Home: NextPage = () => {
@@ -40,7 +42,17 @@ const Home: NextPage = () => {
          <Body classStyle={css4.body} child={
           <>
               <Title classStyle={css2.title} text="Habilidades"></Title>
-              <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
+              <Skill classStyle={css5.skill} child={
+                <>
+                  <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
+                  <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
+                  <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
+                  <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
+                  <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
+                  <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
+                
+                </>
+              }></Skill>
           
           </>
         }></Body>

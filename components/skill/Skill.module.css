@@ -1,0 +1,9 @@
+.skill {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 4px 4px 6px 0px rgb(95, 95, 206), inset -2px -2px 2px 0px rgb(24, 24, 95), inset 2px 2px 2px 0px rgb(8, 7, 7);
+}
