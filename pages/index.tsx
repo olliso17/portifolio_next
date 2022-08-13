@@ -37,6 +37,13 @@ const Home: NextPage = () => {
           
           </>
         }></Body>
+         <Body classStyle={css4.body} child={
+          <>
+              <Title classStyle={css2.title} text="Habilidades"></Title>
+              <ImagePhoto text='https://static.vecteezy.com/ti/fotos-gratis/p1/1256600-aguia-orgulhosa-foto.jpg' classStyle={css3.image}></ImagePhoto>
+          
+          </>
+        }></Body>
     </>
 
   )
