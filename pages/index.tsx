@@ -31,10 +31,10 @@ const Home: NextPage = () => {
               <Card classStyle={css6.git} href='https://github.com/olliso17' target='_blank' child={
                 <BsGithub /> 
               }></Card>
-              <Card classStyle={css6.git} href='https://github.com/olliso17' target='_blank' child={
+              <Card classStyle={css6.linkedin} href='https://www.linkedin.com/in/patricia-silva-oliveira-/' target='_blank' child={
                 <BsLinkedin/> 
               }></Card>
-              <Card classStyle={css6.git} href='https://github.com/olliso17' target='_blank' child={
+              <Card classStyle={css6.whatsapp} href='https://api.whatsapp.com/send?phone=5579996519451' target='_blank' child={
                 <BsWhatsapp/>
               }></Card>
               
